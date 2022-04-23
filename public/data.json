@@ -1,0 +1,30 @@
+[
+    {
+        "_id": "6263dc37ad4fb25beac24248",
+        "name": "Basic Tee",
+        "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
+        "price": "$10",
+        "color": "Black"
+    },
+    {
+        "_id": "6263dc37ad4fb25beac24249",
+        "name": "Artwork Tee",
+        "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-04.jpg",
+        "price": "$35",
+        "color": "Iso Dots"
+    },
+    {
+        "_id": "6263dc37ad4fb25beac2424a",
+        "name": "Basic Tee",
+        "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg",
+        "price": "$50",
+        "color": "Aspen White"
+    },
+    {
+        "_id": "6263dc37ad4fb25beac2424b",
+        "name": "Basic Tee",
+        "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg",
+        "price": "$28",
+        "color": "Charcoal"
+    }
+]
