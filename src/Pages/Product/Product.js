@@ -2,12 +2,14 @@ import React from 'react';
 import './Product.css'
 import { MdDelete } from 'react-icons/md'
 
-const Product = ({ product }) => {
+const Product = ({ product, handleDelete }) => {
+
+
     return (
         <div>
 
-            <div key={product.id} className="group relative">
-                <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+            <div className="group relative m-5">
+                <div className="w-60 min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
                     <img
                         src={product.imageSrc}
                         alt=''
@@ -26,7 +28,7 @@ const Product = ({ product }) => {
                     </div>
                     <div className='flex flex-col'>
                         <span className="text-sm font-medium text-gray-900">{product.price}</span>
-                        <button className='text-2xl text-gray-500'> <MdDelete></MdDelete> </button>
+                        <button onClick={() => handleDelete(product._id)} className='text-3xl text-gray-500 cursor-pointer z-10'> <MdDelete></MdDelete> </button>
                     </div>
 
                 </div>

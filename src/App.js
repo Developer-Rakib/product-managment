@@ -4,11 +4,13 @@ import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import UpgrageProduct from './Pages/UpgradeProduct/UpgrageProduct';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
+      <Toaster />
       <Routes>
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/home' element={<Home></Home>} ></Route>

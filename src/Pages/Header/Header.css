@@ -16,26 +16,20 @@
     margin: 0 10px;
     margin-top: 10px;
     padding: 6px 16px 3px 16px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 19px;
 }
 
 .navLink {
-    font-size: 18px;
-    text-decoration: none;
     color: rgb(119, 119, 119);
     border: 2px solid lightgray;
-    letter-spacing: 1px;
-    font-size: 19px;
 
 }
 
 .activeColor {
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
-    font-size: 18px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 19px;
-
 }
 
 .user {

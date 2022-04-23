@@ -7,7 +7,7 @@ const UpgrageProduct = () => {
 
     return (
         <div className='addProduct-conainer'>
-            <h2 className="text-4xl my-6 text-sky-600">Upgrade This Poduct : </h2>
+            <h2 className="text-4xl my-6 text-gray-600 border-b-4 inline-block px-8 pb-2 border-sky-500 text-center tracking-tight">Upgrade This Poduct : </h2>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
                 <input placeholder='Enter Product Name' {...register("name", { required: true })} />
                 <input placeholder='Enter Product Image Link' {...register("imgLink", { required: true })} />
