@@ -8,6 +8,7 @@ const AddProduct = () => {
 
     return (
         <div className='addProduct-conainer'>
+            <h2 className="text-4xl my-6 text-sky-600 text-center">Add New Product</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
                 <input placeholder='Enter Product Name' {...register("name", { required: true })} />
                 <input placeholder='Enter Product Image Link' {...register("imgLink", { required: true })} />

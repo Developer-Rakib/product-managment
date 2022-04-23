@@ -29,7 +29,7 @@ const Header = () => {
                 <ul className={`flex flex-col sm:flex-row absolute left-0 justify-center sm:relative sm:opacity-100 sm:top-0 bg-white sm:bg-inherit w-full py-2 duration-500 ease-out ${toggle ? "top-12 opacity-100" : "top-[-250px] opacity-0"}`}>
                     <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/home"}>HOME</NavLink>
                     <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/addProduct"}>Add Product</NavLink>
-                    <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/upgadeProduct"}>Upgrade Product</NavLink>
+                    <NavLink className={({ isActive }) => (isActive ? 'activeColor' : 'navLink')} to={"/upgradeProduct"}>Upgrade Product</NavLink>
                 </ul>
 
             </nav>
