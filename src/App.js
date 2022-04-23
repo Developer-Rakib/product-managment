@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import UpgrageProduct from './Pages/UpgradeProduct/UpgrageProduct';
 import { Toaster } from 'react-hot-toast';
+import About from './Pages/About/About';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/home' element={<Home></Home>} ></Route>
         <Route path='/addProduct' element={<AddProduct></AddProduct>} ></Route>
-        <Route path='/upgradeProduct' element={<UpgrageProduct></UpgrageProduct>} ></Route>
+        <Route path='/about' element={<About></About>} ></Route>
+        <Route path='/upgrade/:id' element={<UpgrageProduct></UpgrageProduct>} ></Route>
       </Routes>
 
     </div>

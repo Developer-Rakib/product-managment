@@ -12,19 +12,23 @@ const Home = () => {
     }, [])
 
 
+
+
     const handleDelete = (id) => {
-        let url = `http://localhost:5000/products/${id}`;
-        fetch(url, {
-            method: "DELETE"
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.deletedCount === 1) {
-                    let remening = products.filter(pr => pr._id !== id)
-                    setProducts(remening)
-                    toast.success('Successfully deleted!', { id: "delete" })
-                }
+        if (window.confirm("Are Your Sure? You want to Delete!")) {
+            let url = `http://localhost:5000/products/${id}`;
+            fetch(url, {
+                method: "DELETE"
             })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount === 1) {
+                        let remening = products.filter(pr => pr._id !== id)
+                        setProducts(remening)
+                        toast.success('Successfully deleted!', { id: "delete" })
+                    }
+                })
+        }
     }
     return (
         <div className="bg-white">
