@@ -1,0 +1,20 @@
+.addProduct-conainer {}
+
+.addProduct-conainer form {}
+
+.addProduct-conainer form input {
+    border: 1px solid gray;
+    display: inline-block;
+    width: 32%;
+    margin: 12px auto;
+    height: 39px;
+    border-radius: 21px;
+    padding: 0 15px;
+}
+
+.addProduct-conainer form input[type="submit"] {
+    width: 148px;
+    font-size: 15px;
+    padding: 9px 0;
+    height: auto;
+}
